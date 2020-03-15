@@ -1,20 +1,14 @@
 {% extends "layout.html" %}
 
 {% block content %}
-
-  <!-- HEADINGS -->
- 
-
-<div class="container">
-	<div>
-  <h1 class="u-pull-left">Project:Behave</h1>
-  <h6 class="u-pull-left">Don't Scratch It!</h6>
-  <br>
-   <div class ="u-cf"></div>
+  <div class="container">
   <!-- BUTTONS -->
-<button>Learn More</button>
+
+<a href= "{{ url_for('about')}}" class= "button">Learn More</a> 
+
 <!--<input type= "submit" value ="Request Consultation">
-<a href= "" class= "button">Book an Appointment</a> -->
+<button>Learn More</button>
+-->
 <!-- PRIMARY BUTTONS -->
 <button class= "button-primary">Sign Up</button>
 <!--<input class= "button-primary" type= "submit" 
