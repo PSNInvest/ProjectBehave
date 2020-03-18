@@ -1,0 +1,27 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<div class = "container">
+	<div class = "row">
+		<h3>Home</h3>
+
+<form method ="POST" action ="/login">
+	 	{{ form.hidden_tag() }}
+
+	 	<div class = "form-group">
+	 		{{ form.address(placeholder="Explore nearby") }}
+
+	 	</div>
+
+	 	{{ form.submit(class="button-primary")}}
+
+	</form>
+
+
+
+
+	</div>
+
+</div>
+
+{% endblock %}

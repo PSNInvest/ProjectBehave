@@ -26,5 +26,44 @@
 {% block content %}
 
 {% endblock %}
+<div class ="row">
+  <!--LISTS -->
+<div class="container">
+	<div class="u-pull-left">
+	<a href = "https://bit.ly/lltkuk"><img src="static/img/behavelogo.jpg" height="250" width="250"></a>
+	<div class="u-cf"></div>
+	</div>
+<div class="u-pull-right" >
+<ul>
+  <li><a href="{{url_for('index')}}">Home</a></li>
+  <li><a href="{{url_for('about')}}">About</a></li>
+  <li><a href="{{url_for('partners')}}">Partners</a></li>
+  <!--<li>Private Services</li>
+    <ul>
+      <li>Governance & Aftercare</li>
+      <li>Law & Compliance</li>
+      <li>Training & Development</li>
+    </ul> -->
+    <li>Donate</li>
+</ul>
+<div class="u-cf"></div>
+</div> 
+ </div>
+
+	
+
+</div>
 </body>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-160611005-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-160611005-1');
+</script>
+
+
 </html>
