@@ -116,10 +116,12 @@ def login():
 
 @app.route("/home")
 def home():
+	
+	form = AddressForm()
+
 	if 'email' not in session:
 		return redirect(url_for('login'))
 
- 	form = AddressForm()
 
  	if request.method == 'POST':
  		if form.validate() == False:
