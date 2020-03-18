@@ -29,6 +29,22 @@ def legal():
 def advice():
 	return render_template("advice.html")
 
+@app.route("/oral")
+def oral():
+	return render_template("oral.html")
+
+@app.route("/dermal")
+def dermal():
+	return render_template("dermal.html")
+
+@app.route("/body")
+def body():
+	return render_template("body.html")
+
+@app.route("/genital")
+def genital():
+	return render_template("genital.html")
+
 @app.route("/partners")
 def partners():
 	return render_template("partners.html")
@@ -76,9 +92,7 @@ def logout():
 
 @app.route("/login", methods=["GET", "POST"])
 def login():
-	
 	form = LoginForm()
-
 	if request.method == "POST":
 		if form.validate() == False:
 			return render_template("login.html", form=form)
@@ -86,15 +100,14 @@ def login():
 			email = form.email.data
 			password = form.password.data
 
-			user = User.query.filter_by(email=email).first()
-			if user is not None and user.check_password(password):
-				session['email'] = form.email.data
-				return redirect(url_for('home'))
-			else:
-				return redirect(url_for('login'))
+		user = User.query.filter_by(email=email).first()
+		if user is not None and user.check_password(password):
+			session['email'] = form.email.data
+			return redirect(url_for('home'))
+		else:
+			return redirect(url_for('login'))
 
 	elif request.method == "GET":
-		
 		if 'email' in session:
 			return redirect(url_for('home'))
 
