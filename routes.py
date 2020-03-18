@@ -122,18 +122,17 @@ def home():
 	if 'email' not in session:
 		return redirect(url_for('login'))
 
-
- 	if request.method == 'POST':
+ 	elif request.method == 'POST':
  		if form.validate() == False:
  			return render_template('home.html', form=form)
- 		else:
+ 		#else:
  		# get the address
- 			address = form.address.data
+ 		#address = form.address.data
 
  		# query for places around it
 
  		# return the results
- 			pass
+ 		#pass
 
 	
 	return render_template("home.html", form=form)
