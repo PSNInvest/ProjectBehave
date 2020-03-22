@@ -1,0 +1,63 @@
+{% extends 'layout.html' %}
+
+
+{% block content %}
+
+<div class="container">
+	<div class="row">
+		<a href= "{{url_for('generalinfo')}}" class= " button ">General</a>
+<a href= "{{url_for('legal')}}" class= " button button-primary">Legal</a>
+	<a href= "{{url_for('jewellery')}}" class= "button">Body Piercing Jewellery </a>
+ 	<!--<a href= "{{ url_for('registry')}}" class= " button ">Decontamination </a>
+	<a href= "" class= "button">Tattoo Ink Product Quality</a> 
+
+	</div>
+	<div class="row">
+	<a href= "" class= "button">Governance</a>
+	<a href= "" class= "button">Infectious Disease Incidenct Managment</a> --> 
+	</div>
+<div class="row">
+		<a href= "{{url_for('controls')}}" class= " button ">Controls</a>
+<a href= "{{url_for('outsidelondon')}}" class= " button button-primary">Outside London</a>
+	<a href= "{{url_for('insidelondon')}}" class= "button">Inside London </a>
+	<a href= "{{url_for('consent')}}" class= "button">Consent </a>
+	<a href= "{{url_for('healthandsafety')}}" class= "button">Health and Safety</a>
+	<a href= "{{url_for('anaesthetic')}}" class= "button">Anaesthetic </a>
+</div>
+
+
+<div class="row">
+	<h4>Licensing & Registration Requirements in England & Wales (Excluding London)</h4>
+
+There are provisions in Part VIII of the The Local Government (Miscellaneous Provisions) Act 1982 (LGMPA82) for local authorities in England & Wales to require the registration of persons carrying on the practices of acupuncture, tattooing, ear piercing or electrolysis. 
+<br>
+These powers are adoptive, and local authorities are able to choose which
+of these practices would be required to be registered in their area. The Local Government Act 2003 (LGA03), Section 120, added semi- permanent skin-colouring and cosmetic piercing to this list of activities for which registration can be required.
+<br><br>
+The Act allows for local authorities to make byelaws, for the purpose of securing:<br>
+a) The cleanliness of premises and fittings in such premises;
+<br>
+b) The cleanliness of persons so registered and persons assisting persons so registered in their practice and;
+<br>
+c) The cleansing and, so far as is appropriate, the sterilization of instruments, materials and equipment used in connection with the registered practices.
+<br> <br>
+This is, therefore, specific legislation to ensure proper infection control measures.
+The Secretary of State issued model bylaws, relating specifically to infection control, which local authorities could formally adopt. 
+<br>
+The Act (LGA03) added further model bylaws in respect of cosmetic piercing and semi-permanent skin- colouring. The model bylaws have been reissued as a single document covering all activities that are regulated under the LGMPA 82.
+See Appendix 01 – Model Byelaws: Acupuncture, tattooing, semi-permanent skin- colouring, cosmetic piercing and electrolysis
+<br>
+The local authority can request reasonable information from applicants for registration. This cannot include details concerning persons whom the applicant has given treatments to, however, it could include evidence of training or competency for those being registered.<br>
+The registration is mandatory in that the local authority must issue a registration if the application has been properly made. A registration can only be refused where a person has previously been convicted of an offence under Section 16(1) or (2) of the Act (see below) and the convicting magistrate cancelled the previous registration. A registration can only be cancelled by a magistrate upon conviction of an offence, and this is in lieu of a fine.<br><br>
+There are 3 possible offences –<br>
+• Carrying on the business of acupuncture, tattooing, ear piercing or electrolysis without being registered, contrary to Section 16(1).<br>
+• Contravening any bylaws made under the Act, contrary to Section 16(2).<br>
+• Failing to display a copy of the registration and bylaws at the premises, contrary to Section 16(9).<br>
+The penalties for offences are fines on the Standard Scale of Level 3 (currently £1000) for offences against Section 16(1) and Section 16(2), and Level 2 (currently £500) for an offence against Section 16(9).<br>
+There are some exemptions from the registration requirements. It does not apply to practices carried out by or under the supervision of a person who is registered as a medical practitioner (a Doctor registered with the General Medical Council) or for acupuncture by a dentist, or their respective premises.
+Local authority officers can be authorised to enter any premises where they have reason to believe any of these three offences are being committed, but where entry is refused the authority of a warrant issued by a Justice of the Peace has to be obtained.<br><br>
+
+	
+</div>
+
+{% endblock %}

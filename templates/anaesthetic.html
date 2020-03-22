@@ -1,0 +1,45 @@
+{% extends 'layout.html' %}
+
+
+{% block content %}
+
+<div class="container">
+	<div class="row">
+		<a href= "{{url_for('generalinfo')}}" class= " button ">General</a>
+<a href= "{{url_for('legal')}}" class= " button button-primary">Legal</a>
+	<a href= "{{url_for('jewellery')}}" class= "button">Body Piercing Jewellery </a>
+ 	<!--<a href= "{{ url_for('registry')}}" class= " button ">Decontamination </a>
+	<a href= "" class= "button">Tattoo Ink Product Quality</a> 
+
+	</div>
+	<div class="row">
+	<a href= "" class= "button">Governance</a>
+	<a href= "" class= "button">Infectious Disease Incidenct Managment</a> --> 
+	</div>
+<div class="row">
+		<a href= "{{url_for('controls')}}" class= " button ">Controls</a>
+<a href= "{{url_for('outsidelondon')}}" class= " button">Outside London</a>
+	<a href= "{{url_for('insidelondon')}}" class= "button">Inside London </a>
+	<a href= "{{url_for('consent')}}" class= "button">Consent </a>
+	<a href= "{{url_for('healthandsafety')}}" class= "button">Health and Safety</a>
+	<a href= "{{url_for('anaesthetic')}}" class= "button button-primary">Anaesthetic </a>
+</div>
+
+<div class="row">
+
+<h4>Use of Local Anaesthetic Medication</h4>
+
+There is a range of topical local anaesthetic products for surface (skin) anaesthesia available from community pharmacies (Pharmacy only (P) medicines), however none of these products are
+licensed for local anaesthesia prior to tattoo or body piercing.1 The client may wish to obtain a topical local anaesthetic preparation prior to the procedure; however responsibility for purchasing and application of the product should remain with the client. The client should be advised
+to read the Patient Information Leaflet which accompanies the product and should be aware of the following:
+• Warnings, cautions and contraindications.
+• Side effects.
+• That they are using the licensed product for an un-licensed indication.
+• Recommendations regarding administration and application.
+Alternatively, a qualified practitioner,
+e.g. doctor, may prescribe a topical local anaesthetic product to be self-administered by the client, or can prescribe and administer a topical local anaesthetic product, in accordance with legal requirements of their professional registration.
+Local anaesthetic injections are prescription-only medicines (POMs) therefore they can only be prescribed by a suitably qualified practitioner. Local anaesthetic injections are not licensed for local anaesthesia prior to tattoo or body piercing. In addition they should not be administered parenterally unless adequate resuscitation equipment is available.1 Information on the supply and administration of injectable medicines outside their licensed medicinal uses is available from the Medicines and Healthcare Regulatory Agency (MHRA)2 and from the Nursing and Midwifery Council (NMC).
+
+</div>
+
+{% endblock %}

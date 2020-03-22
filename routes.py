@@ -25,6 +25,30 @@ def generalinfo():
 def legal():
     return render_template("legal.html")
 
+@app.route("/anaesthetic")
+def anaesthetic():
+    return render_template("anaesthetic.html")
+
+@app.route("/consent")
+def consent():
+    return render_template("consent.html")
+
+@app.route("/insidelondon")
+def insidelondon():
+    return render_template("insidelondon.html")
+
+@app.route("/outsidelondon")
+def outsidelondon():
+    return render_template("outsidelondon.html")
+
+@app.route("/healthandsafety")
+def healthandsafety():
+    return render_template("healthandsafety.html")
+
+@app.route("/controls")
+def controls():
+    return render_template("controls.html")
+
 @app.route("/advice")
 def advice():
     return render_template("advice.html")
